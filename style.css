@@ -1,0 +1,106 @@
+/* Importing custom font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: black; /* Ensures black background matches HTML */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+ /* Navbar Container Styling */
+header {
+  display: fixed;
+  justify-content: space-between; /* Ensures items spread out properly */
+  align-items: center; /* Vertically centers the items */
+  padding: 1rem 2rem; /* Adds spacing around the navbar */
+ 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem; /* Adds padding to make links easier to click */
+  border-radius: 5px; /* Optional: rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+nav ul li a:hover {
+  background-color: #444444; /* Subtle background change */
+  color: #f9fafb; /* Lighter text color */
+}
+
+
+/* Profile Icon Styling */
+.profile-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Adds spacing between icon and text */
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.profile-icon img {
+  width: 30px; /* Adjust size of the profile icon */
+  height: 30px;
+  border-radius: 50%; /* Makes the icon circular */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Stacks the links vertically */
+      gap: 0.5rem;
+  }
+}
+
+.content-box {
+    background: linear-gradient(145deg, #202020, #0a0a0a); /* Subtle lighting effect */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7),
+                inset 0 1px 2px rgba(255, 255, 255, 0.1); /* Inner lighting */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.title {
+    font-family: 'Playfair Display', serif; /* Custom font */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f0e68c; /* Soft golden text color */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 
+                 0 0 15px rgba(240, 230, 140, 0.7); /* Glowing effect */
+    margin: 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

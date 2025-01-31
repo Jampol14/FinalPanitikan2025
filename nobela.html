@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobela</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body class="text-white min-h-screen flex flex-col"> <!-- Added padding to push content below navbar -->
+ <!-- Navbar -->
+ <nav class="bg-yellow-500 shadow-lg sticky w-full top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <img src="images\cash.jpg" alt="Profile" class="h-10 w-10 rounded-full">
+                <span class="ml-3 text-xl font-semibold text-black">Panitikan</span>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-black hover:text-white">Home</a></li>
+                <li class="relative group">
+                    <a href="#" id="mgaLiteratura" class="text-black hover:text-white py-4">Mga Literatura</a>
+                    <div id="literaturaSelect" class="absolute left-0 mt-2 bg-gray-900 text-white shadow-lg rounded-md hidden group-hover:block">
+                        <a href="alamat.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Alamat</a>
+                        <a href="maiklingKwento.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Maikling Kwento</a>
+                        <a href="nobela.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Nobela</a>
+                        <a href="pabula.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Pabula</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="text-black hover:text-gray-700">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   
+    <style>
+        body {
+            overflow-y: auto;
+            height: 1900px;
+            padding-top: 70px;
+        }
+
+       
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #f0e68c;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 
+                         0 0 15px rgba(240, 230, 140, 0.7);
+            margin-top: fixed;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: white;
+            text-align: justify;
+            animation: fadeIn 2s ease-out;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 75px;
+            margin-right: 75px;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f0e68c;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 
+                         0 0 15px rgba(240, 230, 140, 0.7);
+            margin-top: 40px;
+            margin-right: 1200px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        h5
+        {
+            text-align: justify;
+            animation: fadeIn 2s ease-out;
+        }
+
+        img
+        {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    
+    <h1>NOBELA</h1>
+    <p>Ang nobela, akdang-buhay o kathambuhay isang maiksing salaysay hinggil sa isang mahalagang pangyayaring kinasasangkutan ng isa o ilang tauhan at may iisang kakintalan o impresyon lamang. Isa itong masining na anyo ng panitikan.</p>
+
+    <h3>MGA HALIMBAWA:</h3> 
+
+    <br>
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col items-center justify-center text-center px-6">
+          <!--Noli Me Tangere-->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\NoliMeTangere.jpg" alt="Noli Me Tangere Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Noli Me Tangere</h5>
+                </div>
+                <p class="mt-4">Ang nobela ay umiikot sa buhay ni Juan Crisostomo Ibarra, isang binatang nagbalik sa Pilipinas matapos mag-aral sa Europa. Sa kanyang pagbabalik, natuklasan niya ang kawalang-katarungan, korapsyon, at pang-aabuso ng mga prayle sa ilalim ng kolonyal na pamahalaan ng Espanya.</p>
+            </div>
+        </div>
+
+        <br>
+      <!--El Filibusterismo-->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\El Fili.jpg" alt="El Filibusterismo Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">El Filibusterismo</h5>
+                </div>
+                <p class="mt-4">Ang kwento ay sumunod sa buhay ni Simoun, ang dating Crisostomo Ibarra, na nagbalik upang maghiganti. Ginamit niya ang kanyang kayamanan para maglunsad ng rebolusyon laban sa mga mananakop, ngunit nauwi ito sa kabiguan dahil sa kakulangan ng pagkakaisa ng mga tao.</p>
+            </div>
+        </div>
+
+        <br>
+         <!--Dekada '70-->
+         <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\Dekada.jpg" alt="Dekada '70 Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Dekada '70</h5>
+                </div>
+                <p class="mt-4">Ang nobela ay nagkukwento sa buhay ni Amanda Bartolome, isang ina na namulat sa mga isyu ng politika noong panahon ng Batas Militar. Habang nakikita niya ang aktibismo ng kanyang mga anak, natutunan din niya ang sariling halaga bilang isang babae sa gitna ng diktadura.</p>
+            </div>
+        </div>
+
+        <br>
+         <!--Banaag at Sikat-->
+         <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\banaag.jpg" alt="Banaag at Sikat Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Banaag at Sikat</h5>
+                </div>
+                <p class="mt-4">Ang nobelang ito ay tumatalakay sa ideya ng sosyalismo at ang pakikibaka ng mga manggagawa para sa kanilang mga karapatan. Ikinuwento ang buhay ni Delfin, isang manunulat na naniniwala sa pagbabago ng lipunan, at ni Felipe, isang tagapagmana na pinili ang rebolusyonaryong landas/p>
+            </div>
+        </div>
+
+        <br>
+          <!--Ang Mga Ibong Mandaragit-->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\ibon.jpg" alt="Ang Mga Ibong Mandaragit Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Mga Ibong Mandaragit</h5>
+                </div>
+                <p class="mt-4">Ang nobela ay sumasalamin sa kalagayan ng mga Pilipino matapos ang digmaan. Pinakita dito ang pakikibaka ng mga magsasaka laban sa mga mapagsamantalang panginoon ng lupa, at ang laban para sa tunay na kalayaan ng bansa.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white py-4">
+        <div class="text-center">
+            © 2025 Panitikan. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

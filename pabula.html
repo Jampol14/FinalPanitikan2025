@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pabula</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body class="text-white min-h-screen flex flex-col"> <!-- Added padding to push content below navbar -->
+ <!-- Navbar -->
+ <nav class="bg-yellow-500 shadow-lg sticky w-full top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <img src="images\cash.jpg" alt="Profile" class="h-10 w-10 rounded-full">
+                <span class="ml-3 text-xl font-semibold texkt-black">Panitikan</span>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-black hover:text-white">Home</a></li>
+                <li class="relative group">
+                    <a href="#" id="mgaLiteratura" class="text-black hover:text-white py-4">Mga Literatura</a>
+                    <div id="literaturaSelect" class="absolute left-0 mt-2 bg-gray-900 text-white shadow-lg rounded-md hidden group-hover:block">
+                        <a href="alamat.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Alamat</a>
+                        <a href="maiklingKwento.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Maikling Kwento</a>
+                        <a href="nobela.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Nobela</a>
+                        <a href="pabula.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Pabula</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="text-black hover:bg-gray-700">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   
+    <style>
+        body {
+            overflow-y: auto;
+            height: 1900px;
+            padding-top: 50px;
+        }
+
+       
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #f0e68c;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 
+                         0 0 15px rgba(240, 230, 140, 0.7);
+            margin-top: fixed;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: white;
+            text-align: justify;
+            animation: fadeIn 2s ease-out;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 75px;
+            margin-right: 75px;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f0e68c;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 
+                         0 0 15px rgba(240, 230, 140, 0.7);
+            margin-top: 40px;
+            margin-right: 1200px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        h5
+        {
+            text-align: justify;
+            animation: fadeIn 2s ease-out;
+        }
+
+        img
+        {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    
+    <h1>PABULA</h1>
+    <p>Ang pabula Ang pabula (tinatawag din minsan bilang parabula o malaalamat na kuwento) ay isang pampanitikang uri na binibigyang kahulugan bilang isang maikling kathang-isip na kuwento, sa prosa o taludtod, na nagtatampok ng mga hayop, maalamat na nilalang, halaman, walang buhay na bagay, o puwersa ng kalikasan na naka-antropomorpiko at naglalarawan o humahantong sa isang partikular na aral ng moralidad (isang "moral"), na maaaring idagdag sa huli nang tahasan bilang isang maiksing kawikaan o kasabihan.</p>
+
+    <h3>MGA HALIMBAWA:</h3> 
+
+    <br>
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col items-center justify-center text-center px-6">
+
+          <!--Ang Pagong at ang Matsing-->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\pagong at matsing.jpeg" alt="Ang Pagong at ang Matsing Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Pagong at ang Matsing</h5>
+                </div>
+                <p class="mt-4">Kwento ng isang pagong at isang matsing na nagkarera. Ang matsing ay mabilis ngunit mayabang, kaya't nakatulog siya habang ang pagong ay patuloy na naglakad nang dahan-dahan at nanalo sa karera. Ang pabula ay nagtuturo ng kahalagahan ng tiyaga at pagsusumikap.</p>
+            </div>
+        </div>
+
+        <br>
+      <!--Ang Mabait na Kalabaw-->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\kalabaw.jpg" alt="Ang Mabait na Kalabaw Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Mabait na Kalabaw</h5>
+                </div>
+                <p class="mt-4">Kwento ng isang kalabaw na matulungin at isang baka na makasarili. Ang kalabaw ay laging nagtatrabaho nang masipag at tumutulong sa ibang hayop, ngunit ang baka ay naging tamad at hindi marunong magbigay ng tulong. Ang pabula ay nagpapakita ng kabutihang-loob at kahalagahan ng pagtulong sa kapwa.</p>
+            </div>
+        </div>
+
+        <br>
+         <!--Ang Agila at ang Maya-->
+         <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="" alt=" NO Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Agila at ang Maya</h5>
+                </div>
+                <p class="mt-4">Isang agila at isang maya ang nagkarera upang makita kung sino ang pinakamabilis. Habang ang agila ay lumipad nang mabilis, ang maya ay kumuha ng shortcut at nanalo sa karera. Ipinapakita ng pabula ang kahalagahan ng pagpaplano at pagiging matalino.</p>
+            </div>
+        </div>
+
+        <br>
+         <!--Ang Pusa at ang Ibon-->
+         <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="" alt="NO Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Pusa at ang Ibon</h5>
+                </div>
+                <p class="mt-4">Kwento ng isang pusa na nagsikap manghuli ng ibon, ngunit sa bawat pagtatangka niya ay palaging nakakawala ang ibon. Pinakita ng pabula ang kahalagahan ng pagiging masigasig at hindi madaling sumuko sa mga pagsubok sa buhay.</p>
+            </div>
+        </div>
+
+        <br>
+          <!--Ang Uwak at ang Bibe-->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="" alt="NO Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Uwak at ang Bibe</h5>
+                </div>
+                <p class="mt-4">Isang uwak at isang bibe ang nagkaroon ng tunggalian dahil sa isang lumulutang na piraso ng pagkain sa tubig. Sa huli, nalaman ng uwak na hindi masarap ang pagkain para sa kanya, at ipinakita ng pabula ang kahalagahan ng hindi pagiging sakim.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white py-4">
+        <div class="text-center">
+            © 2025 Panitikan. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIKLING KWENTO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="text-white min-h-screen flex flex-col"> <!-- Added padding to push content below navbar -->
+    <!-- Navbar -->
+<!-- Navbar -->
+<nav class="bg-yellow-500 shadow-lg sticky top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo and Title -->
+            <div class="flex items-center">
+                <img src="images\cash.jpg" alt="Profile" class="h-10 w-10 rounded-full">
+                <span class="ml-3 text-xl font-semibold text-black">Panitikan</span>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-black hover:text-gray-700">Home</a></li>
+                <li class="relative group">
+                    <a href="#" id="mgaLiteratura" class="text-black hover:text-white py-4">Mga Literatura</a>
+                    <div id="literaturaSelect" class="absolute left-0 mt-2 bg-gray-800 text-white shadow-lg rounded-md hidden group-hover:block">
+                        <a href="alamat.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Alamat</a>
+                        <a href="maiklingKwento.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Maikling Kwento</a>
+                        <a href="nobela.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Nobela</a>
+                        <a href="pabula.html" class="block py-2 px-4 bg-white text-black hover:bg-gray-700">Pabula</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="text-black hover:text-gray-700">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+   
+    <style>
+        body {
+            overflow-y: auto;
+            height: 1900px;
+            padding-top: 0;
+        }
+
+       
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #f0e68c;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 
+                         0 0 15px rgba(240, 230, 140, 0.7);
+            margin-top: fixed;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: white;
+            text-align: justify;
+            animation: fadeIn 2s ease-out;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 75px;
+            margin-right: 75px;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f0e68c;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 
+                         0 0 15px rgba(240, 230, 140, 0.7);
+            margin-top: 40px;
+            margin-right: 1200px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        h5
+        {
+            text-align: justify;
+            animation: fadeIn 2s ease-out;
+        }
+
+        img
+        {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    
+    <h1>MAIKLING KWENTO</h1>
+    <p>Ang maikling kuwento - binaybay ding maikling kwento - ay isang maiksing salaysay hinggil sa isang mahalagang pangyayaring kinasasangkutan ng isa o ilang tauhan at may iisang kakintalan o impresyon lamang. Isa itong masining na anyo ng panitikan.</p>
+
+    <h3>MGA HALIMBAWA:</h3> 
+
+    <br>
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col items-center justify-center text-center px-6">
+
+          <!--Nawawalang Sapatos-->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\mkSapatos.jpg" alt="MK Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Nawawalang Sapatos</h5>
+                </div>
+                <p class="mt-4">Si Kulas ay naglalakad papuntang eskuwela nang mapansin niyang may nawawalang sapatos sa kalye. Sa kanyang paghahanap sa may-ari, natagpuan niya ang isang matandang pulubi na walang sapin sa paa. Ibinigay niya ang sapatos at ito’y nagpasalamat nang taos-puso.</p>
+            </div>
+        </div>
+
+        <br>
+      <!--Ang Nawalang Aso ni Mang Pedro-->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="" alt="NO Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Nawalang Aso ni Mang Pedro</h5>
+                </div>
+                <p class="mt-4">Si Mang Pedro ay nawalan ng alagang aso. Sa kabila ng kanyang pag-aalala, natagpuan niya ang aso sa bahay ng isang batang may sakit. Nalaman niyang pinapasaya ng kanyang aso ang bata kaya’t kusang-loob niya itong ibinigay.</p>
+            </div>
+        </div>
+
+        <br>
+         <!--Ang Diwa ng Pasko-->
+         <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="" alt="NO Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Ang Diwa ng Pasko</h5>
+                </div>
+                <p class="mt-4">Si Ana ay abalang-abala sa paghahanap ng magarang regalo. Natutunan niya ang tunay na diwa ng Pasko nang makita ang masayang pamilya ng pulubi kahit wala silang regalo.</p>
+            </div>
+        </div>
+
+        <br>
+         <!--Ang Maliit na Mangingisda-->
+         <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="" alt="NO Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">"Ang Maliit na Mangingisda"</h5>
+                </div>
+                <p class="mt-4">Isang batang lalaki ang nangangarap maging magaling na mangingisda tulad ng kanyang ama. Isang araw, nahuli niya ang isang mahiwagang isda na nagsabing huwag siyang kakainin. Sa halip na kunin ang alok na kayamanan, pinalaya niya ito.</p>
+            </div>
+        </div>
+
+        <br>
+          <!--Utos ng Hari-->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-4xl relative flex items-center">
+            <div class="relative flex-shrink-0">
+                <img src="images\utos ng hari.jpg" alt="Utos Image" class="w-40 h-auto rounded-lg">
+            </div>
+            <div class="ml-8 text-left text-gray-400 w-full">
+                <div class="text-white bg-black bg-opacity-50 p-4 rounded-lg mb-4">
+                    <h5 class="text-xl font-bold">Utos ng Hari</h5>
+                </div>
+                <p class="mt-4">Ang kwento ay tungkol kay Jojo, isang mag-aaral na pinagdesisyunan ng mga guro na kikick-out sa kanilang paaralan dahil sa kanyang pag-uugali. Kasama niya si Minyong, isang kaibigan na pinagpasyahan ding tanggalin. Pumunta si Jojo kay Mrs. Moral Character para sa panenermon tungkol sa kanyang pag-uugali at leksyon.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white py-4">
+        <div class="text-center">
+            © 2025 Panitikan. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
